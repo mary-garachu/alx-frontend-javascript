@@ -1,8 +1,9 @@
 /* eslint-disable no-array-constructor */
-export default function getListStudentIds(arr) {
-	if (!Array.isArray(arr)) {
-		return [];
-	}
 
-	return arr.map (student => student.id);
+export default function getListStudents(studentArray) {
+  if (!Array.isArray(studentArray)) {
+    return new Array();
+  }
+
+  return studentArray.map((student) => student.id);
 }
